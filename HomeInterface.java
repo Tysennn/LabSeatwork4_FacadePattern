@@ -9,7 +9,6 @@ public class HomeInterface {
         this.airConditioning = new AirConditioning();
     }
 
-    // Individual service control (delegation)
     public void turnOnLight()  { light.turnOn(); }
     public void turnOffLight() { light.turnOff(); }
 
@@ -19,7 +18,6 @@ public class HomeInterface {
     public void turnOnAirConditioning()  { airConditioning.turnOn(); }
     public void turnOffAirConditioning() { airConditioning.turnOff(); }
 
-    // Group operations
     public void turnOnAll() {
         light.turnOn();
         tv.turnOn();
